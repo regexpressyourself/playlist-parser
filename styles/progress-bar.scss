@@ -1,0 +1,19 @@
+.progress-bar {
+  position: relative;
+  height: 1rem;
+  width: 50vw;
+  background-color: var(--color-foreground);
+  border: 0.2rem solid var(--color-foreground);
+  border-radius: 0.5rem;
+}
+
+.progress-bar__progress {
+  background-color: var(--color-background);
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: right 1s linear;
+}

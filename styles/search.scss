@@ -1,0 +1,61 @@
+.result-table {
+  margin: auto;
+}
+
+.search-container {
+  max-width: 48rem;
+  margin: auto;
+  button {
+    margin-bottom: 2rem;
+  }
+}
+
+.album-image {
+  max-width: 8rem;
+}
+
+li.playlist-item {
+  padding-bottom: 1rem;
+  img {
+    max-width: 4rem;
+    margin-right: 1rem;
+    @media (max-width: 640px) {
+      margin-right: 0;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    @media (max-width: 640px) {
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+li.playlist-item,
+li.search-result {
+  list-style-type: none;
+}
+
+.search-result {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+    & > * {
+      margin-right: 1rem;
+    }
+  }
+  img {
+    max-width: 4rem;
+  }
+}
+
+.search-result__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
